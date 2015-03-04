@@ -19,5 +19,8 @@
     "trailing": true,
     "smarttabs": true,
     "jquery": true,
-    "white": true
+    "white": true,
+    "globals":{
+        "L":false
+    }
 }

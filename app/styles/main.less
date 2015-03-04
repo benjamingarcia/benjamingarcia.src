@@ -4,6 +4,12 @@
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
 
+
+@import "../bower_components/leaflet/dist/leaflet.css";
+
+@import "variables";
+
+
 .browsehappy {
   margin: 0.2em 0; 
   background: #ccc; 
@@ -12,17 +18,99 @@
 }
 
 .jumbotron {
-  margin: 10px auto 0 auto;
+  margin: 60px auto 0 auto;
+  background: @color2;
+  color: @color1
 }
 
 body{
     font-family: 'Ubuntu', sans-serif;
+    background: @color1;
+    
+    h1{
+       color: @color2;
+    }
+    
+    h3,h4{
+        color: @color6;
+    }
+    
+     .thumbnail{
+       background: @color8; 
+       
+       img {
+           height:100px;
+       }
+    }
 }
 
 #map{ 
-    height: 500px; 
+    height: 1000px; 
 }
 
 .popupMap{
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Kalam', cursive;
 }
+
+.navbar, .panel-footer{
+    background: @color10;
+    border-color: @color10;
+    color: @color1;
+    
+    a{
+        color: @color1;
+    }
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+    background: @color10;
+            color: @color8;
+}
+
+blockquote {
+    padding: 10px 20px;
+    margin: 0 0 20px;
+    border-left: 5px solid @color7;
+}
+
+a#forkme_banner {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 138px;
+    height: 138px;
+    display: block;
+    background: transparent url(../images/fork-sprite.png) 0 0 no-repeat;
+    text-indent: -9000px;
+    z-index: 3;
+}
+
+.vcenter {
+    width:500px;
+    margin-top:100px;
+}
+
+
+.rotate{
+    width:100px;
+    
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+     
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+     
+    overflow:hidden;
+ 
+    }  
+ 
+.rotate:hover  
+{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+}  
