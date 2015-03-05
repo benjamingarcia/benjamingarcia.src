@@ -36,6 +36,10 @@ map.scrollWheelZoom.disable();
 
   $( window ).konami({
         cheat: function() {
-            alert( 'Cheat code activated!' );
+            
+            $(document).mousemove(function(e){
+                $("#yoshi").stop().animate({left:e.pageX, top:e.pageY});
+            });
+            $("#yoshi").css("display", "block");
         }
     });
