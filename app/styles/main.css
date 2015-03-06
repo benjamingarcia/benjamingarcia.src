@@ -8341,8 +8341,12 @@ button.close {
 }
 .jumbotron {
   margin: 60px auto 0 auto;
+  padding-bottom: 86px;
   background: #7c334f;
   color: #ece4d8;
+}
+.jumbotron a {
+  color: #ece4d8 !important;
 }
 body {
   font-family: 'Ubuntu', sans-serif;
@@ -8360,6 +8364,9 @@ body .thumbnail {
 }
 body .thumbnail img {
   height: 100px;
+}
+body a {
+  color: #7c334f;
 }
 #map {
   height: 1000px;
