@@ -1,5 +1,6 @@
 'use strict';
 
+
 var map = L.map('map').setView([43.744167, 4.220833], 10);
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/benjipotter.jfci4bc0/{z}/{x}/{y}.png', {
@@ -47,11 +48,11 @@ map.doubleClickZoom.disable();
 map.scrollWheelZoom.disable();
 
 
-  $( window ).konami({
-        cheat: function() {
-            $(document).mousemove(function(e){
-                $('#yoshi').stop().animate({left:e.pageX, top:e.pageY});
-            });
-            $('#yoshi').css('display', 'block');
-        }
-    });
+$( window ).konami({
+   cheat: function() {
+      $(document).mousemove(function(e){
+         $('#yoshi').stop().animate({left:e.pageX, top:e.pageY});
+      });
+      $('#yoshi').css('display', 'block');
+   }
+});
