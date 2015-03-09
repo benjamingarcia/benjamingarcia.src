@@ -15,7 +15,7 @@ markerGeomatys.bindPopup('<div class="popupMap">'+
                          '<a href="http://www.geomatys.com" target="_blank"><img src="images/logos/enterprise/geomatys.png" alt="Geomatys" class="logomap1"/></a>'+
                          '</br>Ingénieur développeur de 2012 à aujourd\'hui.'+
                          '</br>Société de service spécialisée dans le traitement de l’information spatiale.'+
-                         '<ul><li>Support et developpement autour de Liferay pour les projets Medpan, Seas-Gabon, Ose-guyamapa et Geosud;</li><li>Développement d\'applications de diffusion de données et metadonnées spatiales supportant les standards OGC;</li><li>Gestion de build et de déploiement d\'applications via Jenkins sur des serveurs tomcat.</li></ul></div>').openPopup();
+                         '<ul><li>Support et développement autour de Liferay pour les projets Medpan, Seas-Gabon, Ose-guyamapa et Geosud;</li><li>Développement d\'applications de diffusion de données et metadonnées spatiales supportant les standards OGC;</li><li>Gestion de build et de déploiement d\'applications via Jenkins sur des serveurs tomcat.</li></ul></div>').openPopup();
 
 var iconEsii = L.MakiMarkers.icon({icon: 'rocket', color: '#ff0000', size: 'm'});
 var markerEsii = L.marker([43.5821, 3.81085], {icon: iconEsii}).addTo(map);
