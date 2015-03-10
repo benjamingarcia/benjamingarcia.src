@@ -10620,6 +10620,17 @@ a#forkme_banner {
   -moz-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 }
+@media screen and (min-width: 600px) {
+  a#cv,
+  a#contact {
+    width: 230px;
+  }
+}
+@media screen and (max-width: 599px) {
+  .jumbotron {
+    padding-bottom: 174px;
+  }
+}
 #yoshi {
   position: absolute;
   display: none;
