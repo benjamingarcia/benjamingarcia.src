@@ -10,7 +10,7 @@ L.tileLayer('http://{s}.tiles.mapbox.com/v3/benjipotter.jfci4bc0/{z}/{x}/{y}.png
 
 //geomatys
 var iconGeomatys = L.MakiMarkers.icon({icon: 'rocket', color: '#ff8800', size: 'm'});
-var markerGeomatys = L.marker([43.6453771, 3.8763527], {icon: iconGeomatys}).addTo(map);
+var markerGeomatys = L.marker([43.651190, 3.864753], {icon: iconGeomatys}).addTo(map);
 markerGeomatys.bindPopup('<div class="popupMap">'+
                          '<a href="http://www.geomatys.com" target="_blank"><img src="images/logos/enterprise/geomatys.png" alt="Geomatys" class="logomap1"/></a>'+
                          '</br>Ingénieur développeur de 2012 à aujourd\'hui.'+
