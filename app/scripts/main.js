@@ -1,21 +1,31 @@
 'use strict';
 
 
-var map = L.map('map').setView([43.744167, 4.220833], 10);
+var map = L.map('map').setView([43.6100219,3.8741615], 12);
 
 L.tileLayer('http://{s}.tiles.mapbox.com/v3/benjipotter.jfci4bc0/{z}/{x}/{y}.png', {
     attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
     maxZoom: 18
 }).addTo(map);
 
+//Acelys
+var iconAcelys = L.MakiMarkers.icon({icon: 'rocket', color: '#b6002e', size: 'm'});
+var markerAcelys = L.marker([43.6179553,3.9157289], {icon: iconAcelys}).addTo(map);
+markerAcelys.bindPopup('<div class="popupMap">'+
+                         '<a href="http://www.acelys.fr" target="_blank"><img src="images/logos/enterprise/acelys.png" alt="Acelys" class="logomap1"/></a>'+
+                         '</br>Ingénieur développeur de 2015 à aujourd\'hui.'+
+                         '</br>société de services et d\’ingénierie en informatique.'+
+                         '<ul><li>Support et développement autour de Liferay pour SADA et l\'intranet d\'Acelys;</li>'+
+                         '<li>Support et développement Documentum pour Orange et la TAM.</li></ul></div>').openPopup();
+
 //geomatys
 var iconGeomatys = L.MakiMarkers.icon({icon: 'rocket', color: '#ff8800', size: 'm'});
 var markerGeomatys = L.marker([43.651190, 3.864753], {icon: iconGeomatys}).addTo(map);
 markerGeomatys.bindPopup('<div class="popupMap">'+
                          '<a href="http://www.geomatys.com" target="_blank"><img src="images/logos/enterprise/geomatys.png" alt="Geomatys" class="logomap1"/></a>'+
-                         '</br>Ingénieur développeur de 2012 à aujourd\'hui.'+
+                         '</br>Ingénieur développeur de 2012 à 2015'+
                          '</br>Société de service spécialisée dans le traitement de l’information spatiale.'+
-                         '<ul><li>Support et développement autour de Liferay pour les projets Medpan, Seas-Gabon, Ose-guyamapa et Geosud;</li><li>Développement d\'applications de diffusion de données et metadonnées spatiales supportant les standards OGC;</li><li>Gestion de build et de déploiement d\'applications via Jenkins sur des serveurs tomcat.</li></ul></div>').openPopup();
+                         '<ul><li>Support et développement autour de Liferay pour les projets Medpan, Seas-Gabon, Ose-guyamapa et Geosud;</li><li>Développement d\'applications de diffusion de données et metadonnées spatiales supportant les standards OGC;</li><li>Gestion de build et de déploiement d\'applications via Jenkins sur des serveurs tomcat.</li></ul></div>');
 
 var iconEsii = L.MakiMarkers.icon({icon: 'rocket', color: '#ff0000', size: 'm'});
 var markerEsii = L.marker([43.5821, 3.81085], {icon: iconEsii}).addTo(map);
